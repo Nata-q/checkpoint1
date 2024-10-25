@@ -1,11 +1,12 @@
 #!/bin/bash
 
+#Création boucle pour lire les arguments 1 a 1
+while true; do
+
 #vérifier si les éléments rentrés sont valide
 [ $# -eq 0 ] && { echo > Il manque les noms d'utilisateurs en argument\nFin du script. ; exit1 ; }
 user=$@
 
-#Création boucle pour lire les arguments 1 a 1
-while true; do
 
 #Vérification si l'utilisateur existe déjà
 if
